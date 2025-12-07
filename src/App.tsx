@@ -12,6 +12,7 @@ import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import SignIn from './components/SignIn';
 import Navbar from './components/Navbar';
+import LinkedInProspector from './components/LinkedInProspector';
 
 function App() {
   const [isSignInOpen, setIsSignInOpen] = useState(false);
@@ -22,9 +23,10 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* <Header onSignInClick={handleSignInOpen} /> */}
-       <Navbar onSignInClick={handleSignInOpen} />
+      <Navbar onSignInClick={handleSignInOpen} />
       <Hero onSignInClick={handleSignInOpen} />
-       {/* <SignInModal    /> */}
+      <LinkedInProspector />
+      {/* <SignInModal    /> */}
       <Industries />
       <Features />
       <HowItWorks />
@@ -35,7 +37,7 @@ function App() {
       <Footer />
       <SignIn isOpen={isSignInOpen} onClose={handleSignInClose} />
 
-       {isSignInOpen && (
+      {isSignInOpen && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl">
             <h2 className="text-2xl font-bold mb-4">Sign In</h2>
