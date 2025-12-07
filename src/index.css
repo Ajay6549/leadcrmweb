@@ -128,3 +128,111 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(135deg, #003d99 0%, #5500cc 100%);
 }
+/* CRM Integration Animation - Vertical Infinite Scroll */
+.crm-animation-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(to right, #6366f1, #8b5cf6, #7c3aed);
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.crm-text {
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  white-space: nowrap;
+}
+
+.crm-animate-container {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 0.75rem;
+  height: 48px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.crm-list {
+  display: flex;
+  flex-direction: column;
+  animation: scrollVerticalInfinite 9s linear infinite;
+  width: 100%;
+}
+
+.crm-list:hover {
+  animation-play-state: paused;
+}
+
+.crm-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  height: 48px;
+  width: 100%;
+  min-height: 48px;
+}
+
+.crm-logo {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  flex-shrink: 0;
+}
+
+.crm-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.crm-name {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes scrollVerticalInfinite {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-144px); /* 3 items × 48px = 144px */
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .crm-animation-wrapper {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+  }
+  
+  .crm-animate-container {
+    width: 180px;
+  }
+  
+  .crm-text {
+    font-size: 1rem;
+  }
+}
