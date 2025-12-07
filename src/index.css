@@ -9,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
@@ -26,7 +26,7 @@
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
-  
+
   .animate-float-delayed {
     animation: float 6s ease-in-out infinite;
     animation-delay: 2s;
@@ -82,22 +82,26 @@
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .animate-float,
   .animate-float-delayed,
   .animate-bounce,
   .animate-pulse {
     animation: none;
   }
-  
+
   * {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
@@ -128,6 +132,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(135deg, #003d99 0%, #5500cc 100%);
 }
+
 /* CRM Integration Animation - Vertical Infinite Scroll */
 .crm-animation-wrapper {
   display: inline-flex;
@@ -215,26 +220,43 @@
   0% {
     transform: translateY(0);
   }
+
   100% {
-    transform: translateY(-144px); /* 3 items × 48px = 144px */
+    transform: translateY(-144px);
+    /* 3 items × 48px = 144px */
   }
 }
 
 /* Responsive */
 @media (max-width: 640px) {
   .crm-animation-wrapper {
-    
+
     flex-direction: column;
     gap: 0.75rem;
     padding: 1rem 1.5rem;
     width: 180px;
   }
-  
+
   .crm-animate-container {
     width: 180px;
   }
-  
+
   .crm-text {
     font-size: 1rem;
+  }
+}
+
+.animate-scroll {
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }

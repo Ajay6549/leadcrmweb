@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import SignIn from './components/SignIn';
 import Navbar from './components/Navbar';
 import LinkedInProspector from './components/LinkedInProspector';
+import ContinuousScroll from './components/ContinuousScroll';
 
 function App() {
   const [isSignInOpen, setIsSignInOpen] = useState(false);
@@ -25,6 +26,7 @@ function App() {
       {/* <Header onSignInClick={handleSignInOpen} /> */}
       <Navbar onSignInClick={handleSignInOpen} />
       <Hero onSignInClick={handleSignInOpen} />
+      <ContinuousScroll />
       <LinkedInProspector />
       {/* <SignInModal    /> */}
       <Industries />
