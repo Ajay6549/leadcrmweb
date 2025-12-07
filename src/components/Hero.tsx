@@ -24,7 +24,7 @@ const Hero: React.FC<HeroProps> = ({ onSignInClick }) => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  ">
         {/* Pill Badge */}
         <div className="flex justify-center mb-6 sm:mb-8">
-          <div className="inline-flex items-center space-x-2 px-4 sm:px-6 py-2 sm:py-3 bg-white border-2 border-[#9ACCFF] rounded-full shadow-sm">
+          <div className="inline-flex items-center space-x-2 px-4 sm:px-6 py-2 sm:py-3 bg-white border-[1px] border-[#9ACCFF] rounded-full shadow-sm">
             <img src={rocketiocn} alt="Rocket Icon" className="w-4 h-4 sm:w-6 sm:h-6" />
             <span className="text-sm sm:text-base text-gray-700 font-medium">Thousands of Professional using LeadCRM </span>
           </div>
@@ -46,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({ onSignInClick }) => {
         <p className="text-center text-lg font-bold sm:text-xl text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
           LeadCRM embeds your CRM directly into LinkedIn, automating prospect syncing and data enrichment in one click.
         </p>
-<div className="flex justify-center mb-8 sm:mb-12 px-4">
+<div className="flex justify-center ">
   <div className="crm-animation-wrapper">
     <span className="crm-text">Works with</span>
     <div className="crm-animate-container" aria-label="Supported CRMs">
@@ -101,55 +101,63 @@ const Hero: React.FC<HeroProps> = ({ onSignInClick }) => {
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-12 lg:space-x-16 mb-8 sm:mb-12 px-4">
           {/* Google Rating */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-white rounded-full shadow flex items-center justify-center">
-              <div className="w-6 h-6 bg-gradient-to-br from-blue-500 via-red-500 to-yellow-500 rounded-full"></div>
+            <div className="flex items-center justify-center">
+              <div className="w-20 h-20">
+                <img src="/Images/cromenew.png" alt="Google Logo" className="w-full h-full " />
+              </div>
             </div>
             <div className="flex space-x-1">
               {[...Array(5)].map((_, i) => (
-                <svg key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400" viewBox="0 0 24 24">
+                <svg key={i} className="w-2 h-2 sm:w-4 sm:h-4 fill-yellow-400 text-yellow-400" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               ))}
             </div>
-            <span className="font-semibold text-gray-900 text-sm sm:text-base">5/5</span>
+            <span className="font-medium  text-gray-900 text-sm sm:text-sm">5/5</span>
           </div>
 
           {/* Trustpilot Rating */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-cyan-500 rounded shadow flex items-center justify-center">
-              <svg className="w-5 h-5 fill-white text-white" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
+            <div className="w-20 h-20">
+
+
+               <div className="w-20 h-20">
+                <img src="/Images/send.png" alt="Google Logo" className="w-full h-full " />
+              </div>
+
             </div>
             <div className="flex space-x-1">
               {[...Array(5)].map((_, i) => (
-                <svg key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400" viewBox="0 0 24 24">
+                <svg key={i} className="w-2 h-2 sm:w-4 sm:h-4 fill-yellow-400 text-yellow-400" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               ))}
             </div>
-            <span className="font-semibold text-gray-900 text-sm sm:text-base">5/5</span>
+             <span className="font-medium  text-gray-900 text-sm sm:text-sm">5/5</span>
           </div>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 px-4">
-          <button className="w-full sm:w-auto flex items-center justify-center space-x-2 sm:space-x-3 px-6 sm:px-8 py-3 sm:py-4 bg-gray-900 text-white rounded-lg shadow-lg hover:bg-gray-800 transition-colors font-semibold text-sm sm:text-base">
-            <span>Available in</span>
-            <div className="flex items-center space-x-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 16.8l-5.894-3.6-5.894 3.6V7.2l5.894 3.6 5.894-3.6v9.6z"/>
-              </svg>
-              <span>Chrome Web Store</span>
-            </div>
-          </button>
-          <button
-            onClick={onSignInClick}
-            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-green-400 to-green-500 text-gray-900 rounded-lg shadow-lg hover:from-green-500 hover:to-green-600 transition-all font-bold text-sm sm:text-base"
-          >
-            Get Your Account Now!
-          </button>
-        </div>
+     <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 px-4">
+  <button className="w-full sm:w-auto flex items-center justify-center space-x-2 sm:space-x-3 px-6 sm:px-8 py-3 sm:py-4 bg-gray-900 text-white rounded-lg shadow-lg hover:bg-gray-800 transition-colors font-semibold text-sm sm:text-base">
+    <span className="flex flex-col ">Available in</span>
+    <div className="flex  items-center space-x-2">
+      <img
+        src="/Images/crome.png"
+        alt="Chrome Web Store"
+        className="w-5 h-5"
+      />
+      <span>Chrome Web Store</span>
+    </div>
+  </button>
+  <button
+    onClick={onSignInClick}
+    className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-green-400 to-green-500 text-gray-900 rounded-lg shadow-lg hover:from-green-500 hover:to-green-600 transition-all font-bold text-sm sm:text-base"
+  >
+    Get Your Account Now!
+  </button>
+</div>
+
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ export default function Navbar({ onSignInClick }) {
       </div>
 
       {/* Navbar */}
-      <nav className="fixed top-[20px] left-0 right-0 z-40 bg-white shadow-[] flex justify-center">
+      <nav className="fixed top-[20px] left-0 right-0 z-40 bg-white shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex justify-center">
         <div className="w-[1440px] h-[100px] px-10 flex items-center justify-between">
 
           {/* Logo */}

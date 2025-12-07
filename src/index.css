@@ -223,9 +223,11 @@
 /* Responsive */
 @media (max-width: 640px) {
   .crm-animation-wrapper {
+    
     flex-direction: column;
     gap: 0.75rem;
     padding: 1rem 1.5rem;
+    width: 180px;
   }
   
   .crm-animate-container {
