@@ -18,7 +18,7 @@ export default function Navbar({ onSignInClick }) {
       </div>
 
       {/* Navbar */}
-      <nav className="fixed top-[20px] left-0 right-0 z-40 bg-white shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex justify-center">
+      <nav className="fixed top-[20px] left-0 right-0 z-40 bg-white shadow-[] flex justify-center">
         <div className="w-[1440px] h-[100px] px-10 flex items-center justify-between">
 
           {/* Logo */}
@@ -38,12 +38,18 @@ export default function Navbar({ onSignInClick }) {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <button
-              onClick={onSignInClick}
-              className="px-6 py-3 bg-[#0A3B8E] text-white rounded-lg font-semibold hover:bg-[#072f70] transition"
-            >
-              Get your free account
-            </button>
+         <button
+  onClick={onSignInClick}
+  className="relative overflow-hidden px-6 py-3 rounded-lg font-semibold text-white bg-[#0A3B8E] group"
+>
+  <span className="relative z-10">Get your free account</span>
+
+  <span className="absolute inset-0 bg-[#2D96BC]
+        origin-bottom-left scale-0 group-hover:scale-100
+        transition-transform duration-300 ease-out z-0 rounded-lg">
+  </span>
+</button>
+
 
             <button
               onClick={onSignInClick}

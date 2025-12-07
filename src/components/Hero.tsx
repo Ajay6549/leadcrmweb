@@ -5,6 +5,8 @@ import pipedrive from "../../public/pept.png";
 import salesforce from "../../public/salesforce.png";
 import chrome from "../../public/crome.png";
 
+import rocketiocn from "../../public/Images/rocket.png";
+
 interface HeroProps {
   onSignInClick: () => void;
 }
@@ -19,48 +21,82 @@ const Hero: React.FC<HeroProps> = ({ onSignInClick }) => {
         <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-pink-200 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-20 sm:pb-24">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  ">
         {/* Pill Badge */}
         <div className="flex justify-center mb-6 sm:mb-8">
-          <div className="inline-flex items-center space-x-2 px-4 sm:px-6 py-2 sm:py-3 bg-white border-2 border-gray-200 rounded-full shadow-sm">
-            <svg className="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-            <span className="text-sm sm:text-base text-gray-700 font-medium">Stop Juggling Tabs. Start Closing Deals.</span>
+          <div className="inline-flex items-center space-x-2 px-4 sm:px-6 py-2 sm:py-3 bg-white border-2 border-[#9ACCFF] rounded-full shadow-sm">
+            <img src={rocketiocn} alt="Rocket Icon" className="w-4 h-4 sm:w-6 sm:h-6" />
+            <span className="text-sm sm:text-base text-gray-700 font-medium">Thousands of Professional using LeadCRM </span>
           </div>
         </div>
 
         {/* Main Heading */}
         <div className="text-center mb-4 sm:mb-6">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
-            LinkedIn Leads, Instantly{' '}
+          <h1 className="text-2xl sm:text-3xl md:text-5xl   lg:text-5xl font-bold text-gray-900 leading-tight">
+            LinkedIn CRM Integration Capture, Sync and Enrich in {' '}
             <span className="relative inline-block">
-              <span className="relative z-10">Synced</span>
-              <span className="absolute bottom-1 sm:bottom-2 left-0 w-full h-3 sm:h-4 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-300 -rotate-1"></span>
+              <span className="relative z-10">Both Ways</span>
+              <span className="absolute bottom-1 sm:bottom-2 left-0 w-full h-3 sm:h-4 bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-300 -rotate-1 "></span>
             </span>
-            .
+            
           </h1>
         </div>
 
         {/* Subheading */}
-        <p className="text-center text-lg sm:text-xl text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto px-4">
+        <p className="text-center text-lg font-bold sm:text-xl text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
           LeadCRM embeds your CRM directly into LinkedIn, automating prospect syncing and data enrichment in one click.
         </p>
-
-        {/* Works With Section */}
-        <div className="flex justify-center mb-8 sm:mb-12 px-4">
-          <div className="inline-flex flex-col sm:flex-row items-center px-6 sm:px-8 py-3 sm:py-4 rounded-2xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 shadow-lg space-y-2 sm:space-y-0">
-            <span className="text-white font-semibold sm:mr-4">Works with</span>
-            <div className="flex items-center space-x-3 bg-white/30 backdrop-blur-sm px-4 py-2 rounded-xl">
-              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-green-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs sm:text-sm">P</span>
-              </div>
-              <span className="text-white font-semibold text-sm sm:text-base">Pipedrive</span>
-            </div>
-            <span className="text-white font-semibold sm:ml-3">& more</span>
+<div className="flex justify-center mb-8 sm:mb-12 px-4">
+  <div className="crm-animation-wrapper">
+    <span className="crm-text">Works with</span>
+    <div className="crm-animate-container" aria-label="Supported CRMs">
+      <div className="crm-list">
+        {/* Original items */}
+        <div className="crm-item">
+          <div className="crm-logo">
+            <img src="/Images/hubspot.png" alt="HubSpot" />
           </div>
+          <span className="crm-name">HubSpot</span>
         </div>
+        <div className="crm-item">
+          <div className="crm-logo">
+            <img src="/Images/salesforce.png" alt="Salesforce" />
+          </div>
+          <span className="crm-name">Salesforce</span>
+        </div>
+        <div className="crm-item">
+          <div className="crm-logo">
+            <img src="/Images/pipedrive.png" alt="Pipedrive" />
+          </div>
+          <span className="crm-name">Pipedrive</span>
+        </div>
+      
+  
 
+        {/* Duplicated items for seamless scroll */}
+        <div className="crm-item">
+          <div className="crm-logo">
+            <img src="/Images/hubspot.png" alt="HubSpot" />
+          </div>
+          <span className="crm-name">HubSpot</span>
+        </div>
+        <div className="crm-item">
+          <div className="crm-logo">
+            <img src="/Images/salesforce.png" alt="Salesforce" />
+          </div>
+          <span className="crm-name">Salesforce</span>
+        </div>
+        <div className="crm-item">
+          <div className="crm-logo">
+            <img src="/Images/pipedrive.png" alt="Pipedrive" />
+          </div>
+          <span className="crm-name">Pipedrive</span>
+        </div>
+      </div>
+    </div>
+    <span className="crm-text">& more</span>
+  </div>
+</div>
         {/* Rating Section */}
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-12 lg:space-x-16 mb-8 sm:mb-12 px-4">
           {/* Google Rating */}
