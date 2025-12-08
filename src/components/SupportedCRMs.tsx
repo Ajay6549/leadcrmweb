@@ -5,11 +5,11 @@ const SupportedCRMs: React.FC = () => {
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1E3A8A] mb-4 font-poppins">
+        <div className="text-center mb-12 max">
+          <h2 className="text-2xl md:text-4xl font-semibold text-[#090F4E] mb-4 font-poppins">
             Our Supported LeadCRM
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto font-poppins">
+          <p className="text-[18px] text-gray-600 max-w-5xl mx-auto font-poppins">
             LeadCRM provides Native Integrations with popular CRM tools to make the most out of your LinkedIn prospecting. We don't want you to miss any revenue opportunity on the internet!
           </p>
         </div>
