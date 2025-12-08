@@ -10,10 +10,6 @@ const LinkedInProspector = () => {
         </div>
       </div>
       <div className="bg-[#f7f9fc] py-16 px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Every LinkedIn Prospector faces these daily challenges
-        </h2>
-
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
 
           {/* LEFT CARD */}
