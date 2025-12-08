@@ -33,7 +33,7 @@ function App() {
       <DataEnrichment />
       <LinkedInPowerhouse onSignInClick={handleSignInOpen} />
       <Footer />
-      <FloatingCTA onSignInClick={handleSignInOpen} />
+      {/* <FloatingCTA onSignInClick={handleSignInOpen} /> */}
       <SignIn isOpen={isSignInOpen} onClose={handleSignInClose} />
     </div>
   );
