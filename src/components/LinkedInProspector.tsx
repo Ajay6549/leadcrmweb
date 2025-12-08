@@ -179,16 +179,26 @@ const LinkedInProspector = () => {
 
         </div>
 
-        {/* BUTTON & GREEN HANDWRITTEN TEXT */}
-        <div className="text-center mt-12">
-          <button className="bg-[#7fda44] text-black font-semibold px-8 py-3 rounded-full shadow-md hover:opacity-90 transition">
+        {/* BUTTON + ARROW + GREEN HANDWRITTEN TEXT */}
+        <div className="flex items-center justify-center mt-12 gap-6">
+
+          {/* BUTTON */}
+          <button className="bg-[#7fda44] text-black font-semibold px-8 py-3 shadow-md hover:opacity-90 transition rounded-md flex items-center gap-2">
             Start Using LeadCRM Now
           </button>
 
-          <p className="text-green-600 text-lg mt-4 italic font-handwritten">
-            Save 40+ hours every Month
+
+        </div>
+        {/* ARROW + TEXT */}
+        <div className="flex flex-col items-start">
+          <img src="/Vector1769.png" alt="" className="w-18" />
+          <img src="/arrow-curve.png" alt="" className="w-10 -mb-2" />
+
+          <p className="text-green-700 text-xl italic font-handwritten leading-tight">
+            Save 40+ hours <br /> every Month
           </p>
         </div>
+
       </div>
 
 

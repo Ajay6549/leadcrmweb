@@ -40,8 +40,8 @@ const SignIn: React.FC<SignInProps> = ({ isOpen, onClose }) => {
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
           <div className="flex items-center">
             <img 
-              src="/CallOPS Logo 2.png" 
-              alt="CallOps" 
+              src="/LeadcrmLogo.png" 
+              alt="LeadCRM" 
               className="h-8 w-auto mr-3"
             />
           </div>
@@ -61,8 +61,8 @@ const SignIn: React.FC<SignInProps> = ({ isOpen, onClose }) => {
             </h2>
             <p className="text-gray-600">
               {isSignUp 
-                ? 'Start your free trial and automate your voice outreach' 
-                : 'Sign in to your CallOps account'
+                ? 'Start your free trial and sync LinkedIn with your CRM' 
+                : 'Sign in to your LeadCRM account'
               }
             </p>
           </div>
