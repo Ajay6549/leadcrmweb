@@ -42,7 +42,7 @@ function App() {
               onClick={handleSignInClose}
               className="w-full py-3 bg-blue-900 text-white rounded-lg font-semibold hover:bg-blue-800 transition-colors"
             >
-              Close
+              close-up
             </button>
           </div>
         </div>
