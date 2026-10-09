@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Industries from './components/Industries';
 import Features from './components/Features';
-import HowItWorks from './components/HowItWorks';
 import SocialProof from './components/SocialProof';
 import Pricing from './components/Pricing';
 import Integrations from './components/Integrations';
@@ -27,7 +26,6 @@ function App() {
        {/* <SignInModal    /> */}
       <Industries />
       <Features />
-      <HowItWorks />
       <SocialProof />
       <Pricing />
       <Integrations />
