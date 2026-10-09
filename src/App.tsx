@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Industries from './componen]\]]]]ts/Industries';
+import Industries from './components/Industries';
 import Features from './components/Features';
 import SocialProof from './components/SocialProof';
 import Pricing from './components/Pricing';
