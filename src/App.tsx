@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Industries from './components/Industries';
+import Industries from './componen]\]]]]ts/Industries';
 import Features from './components/Features';
 import SocialProof from './components/SocialProof';
 import Pricing from './components/Pricing';
@@ -42,7 +42,7 @@ function App() {
               onClick={handleSignInClose}
               className="w-full py-3 bg-blue-900 text-white rounded-lg font-semibold hover:bg-blue-800 transition-colors"
             >
-              Close
+              close-up
             </button>
           </div>
         </div>
