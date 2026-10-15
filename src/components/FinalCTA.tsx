@@ -23,7 +23,6 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ onSignInClick }) => {
           Let AI handle your calls while you focus on closing deals.
         </p>
 
-        {/* Key Benefits */}
         <div className="flex flex-wrap justify-center gap-8 mb-12">
           <div className="flex items-center">
             <CheckCircle className="h-6 w-6 mr-2 text-teal-300" />

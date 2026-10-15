@@ -82,7 +82,7 @@ const Industries: React.FC = () => {
         {/* Call to Action */}
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-6">
-            Don't see your industry? We customize solutions for any business.
+            Don't see your industry? We customize solutions for business.
           </p>
           <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-200">
             Discuss Your Use Case
