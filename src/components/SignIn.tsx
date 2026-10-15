@@ -9,14 +9,7 @@ interface SignInProps {
 const SignIn: React.FC<SignInProps> = ({ isOpen, onClose }) => {
   const [showPassword, setShowPassword] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
-  const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-    confirmPassword: '',
-    firstName: '',
-    lastName: '',
-    company: ''
-  });
+  const [formData, setFormData] = useState();
 
   if (!isOpen) return null;
 
@@ -105,16 +98,7 @@ const SignIn: React.FC<SignInProps> = ({ isOpen, onClose }) => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Company
                   </label>
-                  <input
-                    type="text"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                    placeholder="Your Company"
-                    required
-                  />
-                </div>
+                                  </div>
               </>
             )}
 
@@ -124,16 +108,7 @@ const SignIn: React.FC<SignInProps> = ({ isOpen, onClose }) => {
               </label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  placeholder="you@company.com"
-                  required
-                />
-              </div>
+                              </div>
             </div>
 
             <div>

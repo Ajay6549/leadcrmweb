@@ -9,7 +9,6 @@ import SocialProof from './components/SocialProof';
 import Pricing from './components/Pricing';
 import Integrations from './components/Integrations';
 import FinalCTA from './components/FinalCTA';
-import Footer from './components/Footer';
 import SignIn from './components/SignIn';
 import Navbar from './components/Navbar';
 
@@ -32,8 +31,7 @@ function App() {
       <Pricing />
       <Integrations />
       <FinalCTA onSignInClick={handleSignInOpen} />
-      <Footer />
-      <SignIn isOpen={isSignInOpen} onClose={handleSignInClose} />
+            <SignIn isOpen={isSignInOpen} onClose={handleSignInClose} />
 
        {isSignInOpen && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">

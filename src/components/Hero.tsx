@@ -57,7 +57,7 @@ const Hero: React.FC<HeroProps> = ({ onSignInClick }) => {
               </div>
               <span className="text-white font-semibold text-sm sm:text-base">Pipedrive</span>
             </div>
-            <span className="text-white font-semibold sm:ml-3">& more</span>
+            <span className="text-white font-semibold sm:ml-3">& </span>
           </div>
         </div>
 

@@ -1,21 +1,9 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Linkedin, Twitter, Youtube } from 'lucide-react';
 
-const Footer: React.FC = () => {
+const : React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="lg:col-span-1">
-            <div className="flex items-center mb-4">
-              <img 
-                src="/CallOPS Logo 2.png" 
-                alt="CallOps" 
-                className="h-10 w-auto"
-              />
-            </div>
-            <p className="text-gray-400 mb-6">
+                <p className="text-gray-400 mb-6">
               AI-powered voice calling platform that automates customer outreach 
               and scales your business conversations.
             </p>
@@ -99,8 +87,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </>
   );
 };
 
-export default Footer;
+export default ;
