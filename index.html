@@ -1,50 +1,19 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CallOps - AI Voice Calls that Book Meetings & Close Deals</title>
-    <meta name="description" content="AI-powered voice calling platform that automates customer outreach. Upload contacts, let AI lead natural conversations, and automate scheduling across all industries." />
-    <meta name="keywords" content="AI voice calls, automated calling, voice AI, customer outreach, lead generation, CRM integration" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://callops.ai/" />
-    <meta property="og:title" content="CallOps - AI Voice Calls that Book Meetings & Close Deals" />
-    <meta property="og:description" content="AI-powered voice calling platform that automates customer outreach. Upload contacts, let AI lead natural conversations, and automate scheduling across all industries." />
-    <meta property="og:image" content="https://callops.ai/og-image.jpg" />
+import React from 'react';
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://callops.ai/" />
-    <meta property="twitter:title" content="CallOps - AI Voice Calls that Book Meetings & Close Deals" />
-    <meta property="twitter:description" content="AI-powered voice calling platform that automates customer outreach. Upload contacts, let AI lead natural conversations, and automate scheduling across all industries." />
-    <meta property="twitter:image" content="https://callops.ai/twitter-image.jpg" />
+interface ActionButtonProps {
+  onClick: () => void;
+  label: string;
+  disabled?: boolean;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "CallOps",
-      "url": "https://callops.ai",
-      "logo": "https://callops.ai/logo.png",
-      "description": "AI-powered voice calling platform that automates customer outreach",
-      "foundingDate": "2024",
-      "serviceArea": "Worldwide",
-      "offers": {
-        "@type": "Offer",
-        "name": "AI Voice Calling Platform",
-        "description": "Automated voice calling with AI-powered conversations"
-      }
-    }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+export const ActionButton: React.FC<ActionButtonProps> = ({ onClick, label, disabled = false }) => {
+  return (
+    <button
+      className="relative z-50 flex items-center justify-center px-4 py-2.5 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 active:scale-95 rounded-lg shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-slate-400 disabled:opacity-50 touch-manipulation"
+      onClick={onClick}
+      disabled={disabled}
+    >
+      {label}
+    </button>
+  );
+};
